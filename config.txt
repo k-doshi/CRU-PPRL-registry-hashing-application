@@ -11,7 +11,7 @@
 ; Salt is project-specific and provided by the PI. Salt should not be shared with honest broker
 ; Please ensure that patientid is unique and there are no duplicates
 
-siteid=S101
+siteid=SSChicago
 salt=projectbasedkey
 Server=
 Database=
