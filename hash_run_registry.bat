@@ -18,7 +18,7 @@ exit /b
 
 :success
 for /F "tokens=*"  %%i in ('type ".\Log\InsertLog_Temp.txt" ^| findstr /i "record"') do (
->> ".\Log\InsertCSVLog_%d%.txt" echo %%i)
+>> ".\Log\InsertTableLog_%d%.txt" echo %%i)
 set count=0
 for /f "tokens=*" %%r in ('type ".\Log\InsertLog_Temp.txt" ^| findstr /i "row affected"') do (
 for /f "tokens=1 delims=^( " %%c in ("%%r") do set /a count=%%c
