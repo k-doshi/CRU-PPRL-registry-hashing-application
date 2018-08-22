@@ -1,0 +1,30 @@
+; Enter server name or server and instance name as servername or servername/instance
+; Keep Username . and Password empty for trusted connection with active directory credentials
+; Leave Crypt empty for SQL Server without encryption
+; To store set up functions, enter database name and schema name
+; Enter demographic table name as sourceTable=database.schema.table or a sql sub-query
+; Enter field names from the table e.g. name1=firstname, name2=lastname and dob=birthdate
+; If SSN is not to be included in hashing, then keep ssn=0
+; Provide a temporary table name to store clean data e.g. temptablename=#temptabletostorecleanDATA (# followed by any name)
+; Provide a table name to store hashes e.g. hashTable=database.schema.table
+; siteid is project-specific and provided by the PI
+; Salt is project-specific and provided by the PI. Salt should not be shared with honest broker
+; Please ensure that patientid is unique and there are no duplicates
+
+siteid=S101
+salt=projectbasedkey
+Server=
+Database=
+schema=
+Username=.
+Password=
+Crypt=
+sourceTable= 
+patientid=
+patientidSeed=eachsitechoosesrandomcharacters
+name1=
+name2=
+dob=
+ssn=0
+temptablename=#temptabletostorecleanDATA
+hashTable=
