@@ -1,7 +1,7 @@
 # CRU-PPRL-registry-hashing-application
-This application cleans, combines and hashes patient identifiers using sha512 algorithm. It runs locally without connecting to the web services.
+This application cleans, combines and hashes patient identifiers using sha512 algorithm. It runs locally without connecting to the web services. It is customized to work with the registry and surveillance data.
 
-Patient Identifiers - patient id, first name, last name, date of birth, and SSN (if available).
+Input is a SQL table with the patient identifiers - patient id, first name, last name, date of birth, and SSN (if available).
 The hashed combinations are:
 
     first name + last name + dob + last 4 ssn
