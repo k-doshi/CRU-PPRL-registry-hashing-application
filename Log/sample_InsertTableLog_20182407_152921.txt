@@ -1,3 +1,0 @@
-10 records read
-9 records met criteria
-9 records hashed and inserted into the table successfully 
